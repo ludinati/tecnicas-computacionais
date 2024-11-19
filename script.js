@@ -47,3 +47,13 @@ const perguntas = [
 <script type="module" src="js/aleatorio.js"></script>
 <script type="module" src="js/perguntas.js"></script>
 <script type="module" src="js/script.js"></script>
+const botaoJogarNovamente = document.querySelector(".novamente-btn");function jogaNovamente(){
+        atual = 0;
+        historiaFinal = "";
+        mostraPergunta();
+}function mostraResultado() {
+        caixaPerguntas.textContent = "Em 2049...";
+        textoResultado.textContent = historiaFinal;
+        caixaAlternativas.textContent = "";
+        botaoJogarNovamente.addEventListener("click", jogaNovamente());
+}
